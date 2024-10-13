@@ -1,0 +1,74 @@
+:root {
+    --header-font: Roboto, sans-serif;
+    --collor-over-transparency: #11b5e4;
+}
+
+header nav a {  
+    font-family: var(--header-font);
+    font-style: normal;
+    font-size: xx-large;
+    text-decoration: none;
+    color: #001021;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 h2 {
+    font-family: var(--header-font);
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    background: rgba(0, 16, 33, 0.7);
+    color: var(--collor-over-transparency);
+    position: absolute;
+    top: 250px;
+    display: inline;
+    width: 99%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.hero article {
+    background: rgba(3, 71, 72, 0.5);
+    color: aliceblue;
+    position: absolute;
+    top: 400px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.hero article img {
+    float: right;
+    width: 20%;
+    height: 20%;
+}
+
+.kayaking-ico {
+    width: 1rem;
+}
+
+footer nav img {
+    width: 3rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
