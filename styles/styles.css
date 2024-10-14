@@ -85,6 +85,10 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
+.img-profile {
+    margin-left: 1rem;
+}
+
 p { 
     padding: 0;
 }
