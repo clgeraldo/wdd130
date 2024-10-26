@@ -51,7 +51,7 @@ h2 {
     font-size: 3rem;
 }
 
-p {
+p,figcaption {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -105,13 +105,15 @@ section h2 {
 .div-adventures img {
     display: flex;
     width: 80%;
-    /* margin: auto; */
 }
 
-.div-adventures p {
+figure {
+    margin: 0;
+}
+
+figcaption {
     text-align: center;
 }
-
 
 .kayaking-ico {
     width: 2rem;
