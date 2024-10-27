@@ -238,8 +238,11 @@ button:hover {
     margin: auto;
 }
 
-.div-company-information {
+.width-50p {
     width: 50%;
+}
+
+.div-company-information {
     text-align: end;
     align-content: center;
 }
@@ -250,4 +253,14 @@ button:hover {
 
 .div-employees figcaption {
     font-size: large;   
+}
+
+.h1-contact-us {
+    position: relative;
+    display: block;
+    top: unset;
+}
+
+iframe {
+    border: 0; 
 }
