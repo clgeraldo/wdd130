@@ -68,9 +68,8 @@ img {
     position: absolute;
     top: 400px;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
     padding: 1.5rem;
-    display: flex;
 }
 
 .hero article img {
@@ -111,7 +110,12 @@ section h2 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.div-adventures,.div-employees img {
+.div-adventures img {
+    display: flex;
+    width: 80%;
+}
+
+.div-employees img {
     display: flex;
     width: 80%;
 }
@@ -156,7 +160,7 @@ nav {
     gap: 1rem;
 }
 
-.form-item {
+.form-item, .home-grid {
     display: grid;
     align-items: center;
 }
@@ -173,6 +177,30 @@ nav {
 .column3 {
     grid-template-columns: 1fr 27px;
 }
+
+.home-grid {
+    max-width: 800px;
+    margin: auto;
+    gap: 2rem;
+    align-items: baseline;
+}
+
+.home-grid-column1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-grid-column2 {
+    grid-template-columns: 1fr;
+}
+
+.home-grid img {
+    width: 100%;
+}
+
+.home-grid p {
+    font-size: large;
+}
+
 
 .label-center {
     text-align: center;
@@ -197,7 +225,7 @@ fieldset {
     padding-top: 1rem;
 }
 
-label, input, button, select, textarea {
+label, input, button, select, textarea, legend {
     font-family: Roboto, Arial, sans-serif;
 }
 
@@ -263,4 +291,49 @@ button:hover {
 
 iframe {
     border: 0; 
+}
+
+.about-article {
+    display: flex;
+}
+
+.index-article {
+    display: block;
+}
+
+.discover-trips {
+    background: rgba(3, 71, 72, 0.5);
+    position: absolute;
+    top: 900px;
+    right: 125px;
+    margin-left: 10%;
+    padding: 1.5rem;
+   
+}
+
+.discover-trips a {  
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.sign-newsletter {
+    grid-template-columns: 55px 1fr;
+}
+
+.button-sign {
+    margin: 1rem 0;   
+}
+
+.home-section {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home-grid {
+    display: grid;
+}
+
+.form-newsletter {
+    max-width: 28rem;
 }
