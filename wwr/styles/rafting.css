@@ -51,6 +51,15 @@ h2 {
     font-size: 3rem;
 }
 
+.h2-our-trips {
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    background: rgb(3, 71, 72);
+    margin: 0;
+    padding: 1.5rem;
+}
+
 p,figcaption {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -180,13 +189,13 @@ nav {
 }
 
 .home-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr 39%;
     max-width: 1200px;
     margin: auto;
     gap: 2rem;
     align-items: start;
 }
-
 
 .home-grid-image-4 {
     grid-column: 3/3;
@@ -200,18 +209,39 @@ nav {
 
 .home-grid-column2-right {
     grid-row: 3/4;
-
+    
 }
 
+.trips-grid {
+    display: grid;
+    grid-template-columns: 26% 29% 45%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+    align-items: start;
+}
 
-.home-grid img {
+.trips-grid-column2-left {
+    grid-column: 1/3;
+}
+
+.trips-grid-column2-right {
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+:is(.home-grid,.trips-grid) img {
     width: 100%;
 }
 
-.home-grid p {
+:is(.home-grid,.trips-grid) p, .td-details {
     font-size: large;
 }
 
+.td-trip {
+    font-size: 1.25rem;
+    width: 37%;
+}
 
 .label-center {
     text-align: center;
@@ -244,8 +274,24 @@ fieldset {
     padding-top: 1rem;
 }
 
-label, input, button, select, textarea, legend {
+label, input, button, select, textarea, legend, table {
     font-family: Roboto, Arial, sans-serif;
+}
+
+table {
+    font-size: x-large;
+    border: 1px solid rgb(3, 71, 72);
+    border-collapse: collapse;
+}
+
+tr { 
+    border: 1px solid rgb(3, 71, 72);
+    border-width: 1px 0;
+}
+
+th, td {
+    padding: .75rem;
+    /* border: 1px solid rgb(3, 71, 72); */
 }
 
 label {
@@ -320,17 +366,25 @@ iframe {
     display: block;
 }
 
-.discover-trips {
+.discover-trips,.get-trip {
     background: rgba(3, 71, 72, 0.5);
     position: absolute;
-    top: 900px;
-    right: 125px;
-    margin-left: 10%;
     padding: 1.5rem;
-   
 }
 
-.discover-trips a {  
+.discover-trips {
+    top: 900px;
+    right: 125px;
+    background: rgba(3, 71, 72, 0.5);
+}
+
+.get-trip {
+    top: 980px;
+    right: 100px;
+    background: rgba(3, 71, 72, 0.8);
+}
+
+:is(.discover-trips,.get-trip) a {  
     text-decoration: none;
     color: aliceblue;
     font-weight: 700;
@@ -349,6 +403,12 @@ iframe {
     margin-bottom: 2rem;
 }
 
-.home-grid {
-    display: grid;
+.wireframe-image-link {
+    font-size: x-large;
+    margin: 0;
+}
+
+.wireframe-image-link a {
+    text-decoration: none;
+    margin: 0;
 }
